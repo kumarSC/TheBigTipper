@@ -12,6 +12,6 @@ let firstnameSet: Set<String> = ["John", "Paul", "George", "Ringo", "Mick", "Kei
 
 let lastnameSet: Set<String> = ["Abel", "Abicht", "Abraham", "Abramovic", "Abt", "Achilles", "Achkinadze", "Ackermann", "Adam", "Adams", "Ade"]
 
-let transactiontypeSet: Set<String> = ["deposit", "withdrawal", "payment", "invoice"]   
+let transactiontypeSet: Set<String> = ["DEPOSIT", "WITHDRAWAL", "PAYMENT", "INVOICE"]
 
 let companyNameSet: Set<String> = ["GmbH", "AG", "Gruppe", "KG", "GmbH & Co. KG", "UG", "OHG"]

@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double TheBigTipperVersionNumber;
 FOUNDATION_EXPORT const unsigned char TheBigTipperVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <TheBigTipper/PublicHeader.h>
-
-

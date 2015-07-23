@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  TheBigTipper
+
+  Created by Sushant Choudhary on 7/23/15.
+  Copyright © 2015 Sushant Choudhary. All rights reserved.
+*/
+
+"DEPOSIT" = "Anzahlung";
+"WITHDRAWAL" = "Rückzug";
+"PAYMENT" = "Bezahlung";
+"INVOICE" = "Rechnung";

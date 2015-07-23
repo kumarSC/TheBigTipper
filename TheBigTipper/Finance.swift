@@ -19,8 +19,8 @@ extension BigTipper.finance {
 
     static func transactionType() -> String {
 
-        let tranType = BigTipper.helper.getRandom(transactiontypeSet)
-        return NSLocalizedString(tranType, comment: "Transaction Type")
+        let tranType = BigTipper.helper.getRandom(transactiontypeSet)  
+        return NSLocalizedString(tranType, bundle: NSBundle(forClass: BigTipper.self), comment: "Transaction Type")
     }
 
     static func accountName() -> String {

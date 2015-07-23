@@ -13,14 +13,16 @@ class TheBigTipperTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+
+        let url = NSBundle(forClass: self.classForCoder).URLForResource("Localizable", withExtension: "strings")
+         NSBundle(URL: url!)
     }
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
+
     func testExample() {
 
 
@@ -34,6 +36,16 @@ class TheBigTipperTests: XCTestCase {
 
         print(BigTipper.helper.createTransaction())
         print(BigTipper.helper.createCard())
+        print(BigTipper().setLanguage("de"))
+
+
+        print(UIColor(red: 0xFF, green: 0xFF, blue: 0xFF))
+        print(0xFFFFFF)
+
+        print(UIColor.getHex())
+
+        print(BigTipper.packet.hexdump())
+
 
 
 

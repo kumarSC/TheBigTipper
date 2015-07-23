@@ -13,6 +13,15 @@ public class BigTipper {
 
 
 
+    public func setLanguage(lang:String) -> (){
+         let localePath = NSBundle(forClass: BigTipper.self).pathForResource(lang, ofType: "lproj")
+         let myBundle = NSBundle(path: localePath!)
+        print(myBundle)
+        
+    }
+
+
+
     public struct name {
 
         static var defaultName: String {
@@ -65,6 +74,22 @@ public class BigTipper {
         static var defaultPhoneNumber: String {
             return BigTipper.company.phoneNumber()
         }
+    }
+
+    public struct crashit {
+        static var crashIt: String {
+            return "assert[false]"
+        }
+
+    }
+
+    public struct network {
+
+        static var defaulthexdump: String {
+            return BigTipper.network.hexdump()
+
+        }
+
     }
 
 
