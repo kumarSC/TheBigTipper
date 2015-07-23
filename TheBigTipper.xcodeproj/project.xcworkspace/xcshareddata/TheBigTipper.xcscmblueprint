@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DFBEE46A07034A2CA52E72843BAED3030F3634EB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8A2FC641E042D256BAE9D8D2ABD82F5EB3F835AE" : 0,
+    "DFBEE46A07034A2CA52E72843BAED3030F3634EB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "276C3502-B987-428F-A026-A48EBA4A519C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8A2FC641E042D256BAE9D8D2ABD82F5EB3F835AE" : "..",
+    "DFBEE46A07034A2CA52E72843BAED3030F3634EB" : "TheBigTipper\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TheBigTipper",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TheBigTipper.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/sushantkc\/tutorial.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8A2FC641E042D256BAE9D8D2ABD82F5EB3F835AE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kumarSC\/TheBigTipper.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DFBEE46A07034A2CA52E72843BAED3030F3634EB"
+    }
+  ]
+}

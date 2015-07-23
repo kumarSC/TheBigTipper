@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>TheBigTipper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>DD6734CA1B594363002D358D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD6734D41B594363002D358D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DDE86A401B5D502A008D8497</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DDE86A4D1B5D503D008D8497</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
