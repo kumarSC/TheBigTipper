@@ -22,10 +22,10 @@ extension UIColor {
         self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff)
     }
 
-    static func getHex() {
-    let colors = CGColorGetComponents( UIColor.grayColor().CGColor )
-    let hexCol:String = NSString(format: "#%02x%02x%02x", Int(colors[0] * 255.0), Int(colors[1] * 255.0), Int(colors[2] * 255.0)) as String
-        print(hexCol)
-}
+//    static func getHex() {
+//    let colors = CGColorGetComponents( UIColor.grayColor().CGColor )
+//    let hexCol:String = NSString(format: "#%02x%02x%02x", Int(colors[0] * 255.0), Int(colors[1] * 255.0), Int(colors[2] * 255.0)) as String
+//        print(hexCol)
+//}
 
 }

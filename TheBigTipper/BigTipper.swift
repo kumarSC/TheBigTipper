@@ -11,21 +11,10 @@ import Foundation
 
 public class BigTipper {
 
-
-
-    public func setLanguage(lang:String) -> (){
-         let localePath = NSBundle(forClass: BigTipper.self).pathForResource(lang, ofType: "lproj")
-         let myBundle = NSBundle(path: localePath!)
-        print(myBundle)
-        
-    }
-
-
-
     public struct name {
 
         static var defaultName: String {
-            return BigTipper.name.firstname()
+            return (BigTipper.name.firstname()+" "+BigTipper.name.lastname())
         }
 
         static func firstname() -> String {
@@ -42,7 +31,7 @@ public class BigTipper {
     public struct finance {
 
         static var defaultAmount: String {
-            return BigTipper.finance.amount(1000, max: 10000)
+            return BigTipper.finance.amount(1000, max: 100000)
         }
 
         var defaultTransactionType: String {
@@ -90,16 +79,20 @@ public class BigTipper {
 
         }
 
+        
+        static func testSplit() {
+
+            var hexDumpSet = Set<Int>()
+
+            for index in 150...255 {
+                let hex = String(index, radix: 16)
+                let intHex = Int(hex, radix: 16)
+                hexDumpSet.insert(intHex!)
+            }
+            print(hexDumpSet)
+        }
     }
-
-
 }
-
-
-
-
-
-
 
 
 

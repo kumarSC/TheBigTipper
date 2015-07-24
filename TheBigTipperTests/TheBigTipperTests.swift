@@ -14,8 +14,10 @@ class TheBigTipperTests: XCTestCase {
     override func setUp() {
         super.setUp()
 
-        let url = NSBundle(forClass: self.classForCoder).URLForResource("Localizable", withExtension: "strings")
-         NSBundle(URL: url!)
+//        let url = NSBundle(forClass: self.classForCoder).URLForResource("Localizable", withExtension: "strings")
+//         NSBundle(URL: url!)
+//        print(NSBundle(URL: url!))
+
     }
     
     override func tearDown() {
@@ -26,26 +28,27 @@ class TheBigTipperTests: XCTestCase {
     func testExample() {
 
 
+
+
         print(BigTipper.name.defaultName)
         print(BigTipper.name.firstname())
         print(BigTipper.name.lastname())
-
+//
         print(BigTipper.finance.account())
         print(BigTipper.finance.defaultAmount)
-        print(BigTipper.finance.transactionType())
-
+//
+//
+//
+//
         print(BigTipper.helper.createTransaction())
         print(BigTipper.helper.createCard())
-        print(BigTipper().setLanguage("de"))
-
-
-        print(UIColor(red: 0xFF, green: 0xFF, blue: 0xFF))
-        print(0xFFFFFF)
-
-        print(UIColor.getHex())
-
-        print(BigTipper.packet.hexdump())
-
+//
+//
+        print(BigTipper.network.defaulthexdump)
+//
+        print(BigTipper.helper.setLanguage("de"))
+        print(BigTipper.finance.transactionType())
+//
 
 
 

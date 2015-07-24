@@ -7,16 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD2A8EC31B60F9C100B9DCC2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD2A8EC11B60F9C100B9DCC2 /* Localizable.strings */; };
-		DD2A8EC41B60F9C100B9DCC2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD2A8EC11B60F9C100B9DCC2 /* Localizable.strings */; };
-		DD2A8ECA1B60FA1900B9DCC2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD2A8EC61B60F9C900B9DCC2 /* Localizable.strings */; };
-		DD2A8ECB1B60FA1A00B9DCC2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD2A8EC61B60F9C900B9DCC2 /* Localizable.strings */; };
 		DD2A8ECD1B612EFA00B9DCC2 /* CrashIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A8ECC1B612EFA00B9DCC2 /* CrashIt.swift */; };
 		DD2A8ECE1B612EFA00B9DCC2 /* CrashIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A8ECC1B612EFA00B9DCC2 /* CrashIt.swift */; };
 		DD2A8ED01B613D3400B9DCC2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A8ECF1B613D3400B9DCC2 /* Network.swift */; };
-		DD2A8ED11B613D3400B9DCC2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A8ECF1B613D3400B9DCC2 /* Network.swift */; };
 		DD2A8ED31B613F3600B9DCC2 /* HexHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A8ED21B613F3600B9DCC2 /* HexHelper.swift */; };
 		DD2A8ED41B613F3600B9DCC2 /* HexHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A8ED21B613F3600B9DCC2 /* HexHelper.swift */; };
+		DD2A8ED81B6209A900B9DCC2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD2A8ED61B6209A900B9DCC2 /* Localizable.strings */; };
+		DD2A8ED91B6209A900B9DCC2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD2A8ED61B6209A900B9DCC2 /* Localizable.strings */; };
 		DD6734CF1B594363002D358D /* TheBigTipper.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6734CE1B594363002D358D /* TheBigTipper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD6734E61B5959FC002D358D /* BigTipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6734E51B5959FC002D358D /* BigTipper.swift */; };
 		DD6734EB1B5B9FEB002D358D /* nameSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6734EA1B5B9FEB002D358D /* nameSet.swift */; };
@@ -40,11 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DD2A8EC21B60F9C100B9DCC2 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Localizable.strings; sourceTree = "<group>"; };
-		DD2A8EC71B60F9C900B9DCC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		DD2A8ECC1B612EFA00B9DCC2 /* CrashIt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashIt.swift; sourceTree = "<group>"; };
 		DD2A8ECF1B613D3400B9DCC2 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		DD2A8ED21B613F3600B9DCC2 /* HexHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexHelper.swift; sourceTree = "<group>"; };
+		DD2A8ED71B6209A900B9DCC2 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DD2A8EDD1B62209300B9DCC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DD6734CB1B594363002D358D /* TheBigTipper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TheBigTipper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD6734CE1B594363002D358D /* TheBigTipper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheBigTipper.h; sourceTree = "<group>"; };
 		DD6734D01B594363002D358D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,22 +77,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DD2A8EC01B60F9C100B9DCC2 /* de.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				DD2A8EC11B60F9C100B9DCC2 /* Localizable.strings */,
-			);
-			path = de.lproj;
-			sourceTree = "<group>";
-		};
-		DD2A8EC51B60F9C900B9DCC2 /* en.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				DD2A8EC61B60F9C900B9DCC2 /* Localizable.strings */,
-			);
-			path = en.lproj;
-			sourceTree = "<group>";
-		};
 		DD6734C11B594363002D358D = {
 			isa = PBXGroup;
 			children = (
@@ -117,8 +98,7 @@
 		DD6734CD1B594363002D358D /* TheBigTipper */ = {
 			isa = PBXGroup;
 			children = (
-				DD2A8EC51B60F9C900B9DCC2 /* en.lproj */,
-				DD2A8EC01B60F9C100B9DCC2 /* de.lproj */,
+				DD2A8ED61B6209A900B9DCC2 /* Localizable.strings */,
 				DDE86A641B5FF7EA008D8497 /* Locale */,
 				DD6734CE1B594363002D358D /* TheBigTipper.h */,
 				DD6734D01B594363002D358D /* Info.plist */,
@@ -246,8 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2A8EC31B60F9C100B9DCC2 /* Localizable.strings in Resources */,
-				DD2A8ECA1B60FA1900B9DCC2 /* Localizable.strings in Resources */,
+				DD2A8ED81B6209A900B9DCC2 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,8 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2A8EC41B60F9C100B9DCC2 /* Localizable.strings in Resources */,
-				DD2A8ECB1B60FA1A00B9DCC2 /* Localizable.strings in Resources */,
+				DD2A8ED91B6209A900B9DCC2 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2A8ED11B613D3400B9DCC2 /* Network.swift in Sources */,
 				DD2A8ECE1B612EFA00B9DCC2 /* CrashIt.swift in Sources */,
 				DDA4B1301B60C2E20091D69E /* TheBigTipperTests.swift in Sources */,
 				DD2A8ED41B613F3600B9DCC2 /* HexHelper.swift in Sources */,
@@ -302,18 +279,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DD2A8EC11B60F9C100B9DCC2 /* Localizable.strings */ = {
+		DD2A8ED61B6209A900B9DCC2 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DD2A8EC21B60F9C100B9DCC2 /* de */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		DD2A8EC61B60F9C900B9DCC2 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD2A8EC71B60F9C900B9DCC2 /* en */,
+				DD2A8ED71B6209A900B9DCC2 /* de */,
+				DD2A8EDD1B62209300B9DCC2 /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

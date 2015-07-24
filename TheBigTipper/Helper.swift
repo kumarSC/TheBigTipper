@@ -10,6 +10,8 @@ import Foundation
 
 public extension BigTipper {
 
+    static var localeModule:NSBundle = NSBundle(forClass: BigTipper.self)
+
     struct helper {
 
         static func createTransaction() ->  [String: AnyObject] {
@@ -57,6 +59,25 @@ public extension BigTipper {
             return tipName
             
         }
+
+
+        static func setLanguage(lang:String?=nil) -> (){
+            //         let localePath = NSBundle(forClass: BigTipper.self).pathForResource(lang, ofType: "lproj")
+
+            if lang != nil {
+                let url = NSBundle(forClass: BigTipper.self).URLForResource(lang, withExtension: "lproj")
+                localeModule = NSBundle(URL: url!)!
+            }
+            else {
+                let url = NSBundle(forClass: BigTipper.self).URLForResource("en", withExtension: "lproj")
+                localeModule = NSBundle(URL: url!)!
+
+            }
+
+            
+        }
+        
+
 
 
 
