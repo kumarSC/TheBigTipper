@@ -22,7 +22,7 @@ public extension BigTipper {
                 "date" : NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .MediumStyle, timeStyle: .ShortStyle),
                 "business" : BigTipper.company.companyName(),
                 "name" : BigTipper.finance.accountName(),
-                "type" : getRandom(transactiontypeSet),
+                "type" : BigTipper.finance.transactionType(),
                 "account" : BigTipper.finance.account()
             ]
         }
@@ -32,9 +32,10 @@ public extension BigTipper {
 
             return [
 
-                "name" : BigTipper.name.firstname(),
+                "name" : BigTipper.name.defaultName,
                 "business" : BigTipper.company.companyName(),
-                "phone" : BigTipper.company.phoneNumber()
+                "phone" : BigTipper.company.phoneNumber(),
+                "email" : BigTipper.internet.email()
 
             ]
 
@@ -75,6 +76,21 @@ public extension BigTipper {
             }
 
             
+        }
+
+        static func randomAlphaNum (len : Int) -> NSString {
+
+            let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+            let randomString : NSMutableString = NSMutableString(capacity: len)
+
+            for (var i=0; i < len; i++){
+                let length = UInt32 (letters.length)
+                let rand = arc4random_uniform(length)
+                randomString.appendFormat("%C", letters.characterAtIndex(Int(rand)))
+            }
+
+            return randomString
         }
         
 

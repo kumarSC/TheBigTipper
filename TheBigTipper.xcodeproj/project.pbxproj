@@ -14,6 +14,7 @@
 		DD2A8ED41B613F3600B9DCC2 /* HexHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A8ED21B613F3600B9DCC2 /* HexHelper.swift */; };
 		DD2A8ED81B6209A900B9DCC2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD2A8ED61B6209A900B9DCC2 /* Localizable.strings */; };
 		DD2A8ED91B6209A900B9DCC2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD2A8ED61B6209A900B9DCC2 /* Localizable.strings */; };
+		DD2A8EE11B62958200B9DCC2 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A8EDE1B6294D100B9DCC2 /* Internet.swift */; };
 		DD6734CF1B594363002D358D /* TheBigTipper.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6734CE1B594363002D358D /* TheBigTipper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD6734E61B5959FC002D358D /* BigTipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6734E51B5959FC002D358D /* BigTipper.swift */; };
 		DD6734EB1B5B9FEB002D358D /* nameSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6734EA1B5B9FEB002D358D /* nameSet.swift */; };
@@ -42,6 +43,7 @@
 		DD2A8ED21B613F3600B9DCC2 /* HexHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexHelper.swift; sourceTree = "<group>"; };
 		DD2A8ED71B6209A900B9DCC2 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DD2A8EDD1B62209300B9DCC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DD2A8EDE1B6294D100B9DCC2 /* Internet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
 		DD6734CB1B594363002D358D /* TheBigTipper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TheBigTipper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD6734CE1B594363002D358D /* TheBigTipper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheBigTipper.h; sourceTree = "<group>"; };
 		DD6734D01B594363002D358D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				DD2A8ECC1B612EFA00B9DCC2 /* CrashIt.swift */,
 				DD2A8ECF1B613D3400B9DCC2 /* Network.swift */,
 				DD2A8ED21B613F3600B9DCC2 /* HexHelper.swift */,
+				DD2A8EDE1B6294D100B9DCC2 /* Internet.swift */,
 			);
 			path = TheBigTipper;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				DDE86A5E1B5E8DF2008D8497 /* Finance.swift in Sources */,
 				DDE86A601B5F9C19008D8497 /* Company.swift in Sources */,
 				DDE86A5A1B5DE5D6008D8497 /* TipDefinition.swift in Sources */,
+				DD2A8EE11B62958200B9DCC2 /* Internet.swift in Sources */,
 				DDE86A5C1B5DE8E7008D8497 /* Helper.swift in Sources */,
 				DD2A8ED01B613D3400B9DCC2 /* Network.swift in Sources */,
 				DD2A8ECD1B612EFA00B9DCC2 /* CrashIt.swift in Sources */,

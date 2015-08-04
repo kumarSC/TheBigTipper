@@ -92,6 +92,19 @@ public class BigTipper {
             print(hexDumpSet)
         }
     }
+
+
+    public struct internet {
+
+        static var defaultEmail: String {
+            return BigTipper.internet.email()
+        }
+
+        static var defaultusername: String {
+            return BigTipper.internet.username()
+
+        }
+    }
 }
 
 
