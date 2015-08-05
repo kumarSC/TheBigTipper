@@ -68,16 +68,16 @@ public extension BigTipper {
             //         let localePath = NSBundle(forClass: BigTipper.self).pathForResource(lang, ofType: "lproj")
 
             if  lang != nil {
-                let url = NSBundle(forClass: BigTipper.self).URLForResource(lang, withExtension: "lproj")
-                localeModule = NSBundle(URL: url!)!
-//                getLanguageBundle(lang!)
+//                let url = NSBundle(forClass: BigTipper.self).URLForResource(lang, withExtension: "lproj")
+//                localeModule = NSBundle(URL: url!)!
+                localeModule = getLanguageBundle(lang!)!
             }
             else {
                 let url = NSBundle(forClass: BigTipper.self).URLForResource("en", withExtension: "lproj")
-                localeModule = NSBundle(URL: url!)!
-//                let localizeString = NSLocale.currentLocale().localeIdentifier
-//                let index: String.Index = advance(localizeString.startIndex, 2)
-//                getLanguageBundle(localizeString.substringToIndex(index))
+//                localeModule = NSBundle(URL: url!)!
+                let localizeString = NSLocale.currentLocale().localeIdentifier
+                let index: String.Index = advance(localizeString.startIndex, 2)
+                localeModule = getLanguageBundle(localizeString.substringToIndex(index))!
             }
 
             
@@ -107,19 +107,17 @@ public extension BigTipper {
 
 }
 
-//func localizedString(key: String, value: String? = nil, table: String? = nil) -> String {
-//    if let languageBundle = languageBundle {
-//        return languageBundle.localizedStringForKey(key, value: value, table: table)
-//    }
-//    return key
-//}
+func localizedString(key: String, value: String? = nil, table: String? = nil) -> String {
+    if let languageBundle = languageBundle {
+        return languageBundle.localizedStringForKey(key, value: value, table: table)
+    }
+    return key
+}
 
-//func getLanguageBundle(localizeString: String = NSLocale.currentLocale().localeIdentifier) -> NSBundle? {
-//    let classBundle = NSBundle(forClass: BigTipper.self)
+func getLanguageBundle(localizeString: String = NSLocale.currentLocale().localeIdentifier) -> NSBundle? {
+    let classBundle = NSBundle(forClass: BigTipper.self)
 //    guard let languageRootBundlePath = classBundle.pathForResource("BigTipper", ofType: "bundle") else { return nil }
 //    guard let languageRootBundle = NSBundle(path: languageRootBundlePath) else { return nil }
-////    let localizeString = NSLocale.currentLocale().localeIdentifier
-////    let index: String.Index = advance(localizeString.startIndex, 2)
-//    guard let languageBundlePath = languageRootBundle.pathForResource(localizeString, ofType: "lproj") else { return nil }
-//    return NSBundle(path: languageBundlePath)
-//}
+    guard let languageBundlePath = classBundle.pathForResource(localizeString, ofType: "lproj") else { return nil }
+    return NSBundle(path: languageBundlePath)
+}

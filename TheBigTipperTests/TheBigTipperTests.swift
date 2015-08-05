@@ -30,28 +30,28 @@ class TheBigTipperTests: XCTestCase {
 
 
 
-        print(BigTipper.name.defaultName)
-        print(BigTipper.name.firstname())
-        print(BigTipper.name.lastname())
-
-        print(BigTipper.finance.account())
-        print(BigTipper.finance.defaultAmount)
-
-        print(BigTipper.helper.createTransaction())
-        print(BigTipper.helper.createCard())
-
-        print(BigTipper.network.defaulthexdump)
-
-
+//        print(BigTipper.name.defaultName)
+//        print(BigTipper.name.firstname())
+//        print(BigTipper.name.lastname())
+//
+//        print(BigTipper.finance.account())
+//        print(BigTipper.finance.defaultAmount)
+//
+//        print(BigTipper.helper.createTransaction())
+//        print(BigTipper.helper.createCard())
+//
+//        print(BigTipper.network.defaulthexdump)
+//
+//
         print(BigTipper.helper.setLanguage("de"))
         print(BigTipper.finance.transactionType())
-        print(BigTipper.helper.createTransaction())
-
-        print(BigTipper.internet.username())
-        print(BigTipper.internet.password(5))
-        print(BigTipper.internet.url(true))
-
-
+//        print(BigTipper.helper.createTransaction())
+//
+//        print(BigTipper.internet.username())
+//        print(BigTipper.internet.password(5))
+//        print(BigTipper.internet.url(true))
+//
+//
 //
 
 
