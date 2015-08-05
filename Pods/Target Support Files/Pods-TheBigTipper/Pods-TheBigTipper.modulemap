@@ -1,0 +1,6 @@
+framework module Pods_TheBigTipper {
+  umbrella header "Pods-TheBigTipper-umbrella.h"
+
+  export *
+  module * { export * }
+}

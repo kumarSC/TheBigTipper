@@ -8,6 +8,8 @@
 
 import Foundation
 
+let languageBundle: NSBundle? = getLanguageBundle()
+
 public extension BigTipper {
 
     static var localeModule:NSBundle = NSBundle(forClass: BigTipper.self)
@@ -100,4 +102,21 @@ public extension BigTipper {
     }
 
 
+}
+
+func localizedString(key: String, value: String? = nil, table: String? = nil) -> String {
+    if let languageBundle = languageBundle {
+        return languageBundle.localizedStringForKey(key, value: value, table: table)
+    }
+    return key
+}
+
+func getLanguageBundle() -> NSBundle? {
+    let classBundle = NSBundle(forClass: BigTipper.self)
+    guard let languageRootBundlePath = classBundle.pathForResource("BigTipper", ofType: "bundle") else { return nil }
+    guard let languageRootBundle = NSBundle(path: languageRootBundlePath) else { return nil }
+    let localizeString = NSLocale.currentLocale().localeIdentifier
+    let index: String.Index = advance(localizeString.startIndex, 2)
+    guard let languageBundlePath = languageRootBundle.pathForResource(localizeString.substringToIndex(index), ofType: "lproj") else { return nil }
+    return NSBundle(path: languageBundlePath)
 }

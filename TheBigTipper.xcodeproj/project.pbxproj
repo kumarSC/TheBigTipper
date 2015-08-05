@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1209A8F8AA934655F5BB85D6 /* Pods_TheBigTipper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924096C9A8D0F75B846AFB00 /* Pods_TheBigTipper.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DD2A8ECD1B612EFA00B9DCC2 /* CrashIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A8ECC1B612EFA00B9DCC2 /* CrashIt.swift */; };
 		DD2A8ECE1B612EFA00B9DCC2 /* CrashIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A8ECC1B612EFA00B9DCC2 /* CrashIt.swift */; };
 		DD2A8ED01B613D3400B9DCC2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A8ECF1B613D3400B9DCC2 /* Network.swift */; };
@@ -38,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5FAB98CC88A337339F0D807D /* Pods-TheBigTipper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBigTipper.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheBigTipper/Pods-TheBigTipper.release.xcconfig"; sourceTree = "<group>"; };
+		924096C9A8D0F75B846AFB00 /* Pods_TheBigTipper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheBigTipper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E244E74F8B887EB1298F358 /* Pods-TheBigTipper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBigTipper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheBigTipper/Pods-TheBigTipper.debug.xcconfig"; sourceTree = "<group>"; };
 		DD2A8ECC1B612EFA00B9DCC2 /* CrashIt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashIt.swift; sourceTree = "<group>"; };
 		DD2A8ECF1B613D3400B9DCC2 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		DD2A8ED21B613F3600B9DCC2 /* HexHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexHelper.swift; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1209A8F8AA934655F5BB85D6 /* Pods_TheBigTipper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +84,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78303979E9D2A9B95E0CC15F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E244E74F8B887EB1298F358 /* Pods-TheBigTipper.debug.xcconfig */,
+				5FAB98CC88A337339F0D807D /* Pods-TheBigTipper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD4C5ABA6016AF502E83A11D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				924096C9A8D0F75B846AFB00 /* Pods_TheBigTipper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD6734C11B594363002D358D = {
 			isa = PBXGroup;
 			children = (
 				DD6734CD1B594363002D358D /* TheBigTipper */,
 				DD6734D91B594363002D358D /* TheBigTipperTests */,
 				DD6734CC1B594363002D358D /* Products */,
+				78303979E9D2A9B95E0CC15F /* Pods */,
+				DD4C5ABA6016AF502E83A11D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,10 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD6734DF1B594363002D358D /* Build configuration list for PBXNativeTarget "TheBigTipper" */;
 			buildPhases = (
+				0D906D49A93DF3FD12ABD557 /* Check Pods Manifest.lock */,
 				DD6734C61B594363002D358D /* Sources */,
 				DD6734C71B594363002D358D /* Frameworks */,
 				DD6734C81B594363002D358D /* Headers */,
 				DD6734C91B594363002D358D /* Resources */,
+				3CFE9C69D24B172368D2FAA1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,6 +268,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D906D49A93DF3FD12ABD557 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3CFE9C69D24B172368D2FAA1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheBigTipper/Pods-TheBigTipper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD6734C61B594363002D358D /* Sources */ = {
@@ -388,6 +447,7 @@
 		};
 		DD6734E01B594363002D358D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E244E74F8B887EB1298F358 /* Pods-TheBigTipper.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -408,6 +468,7 @@
 		};
 		DD6734E11B594363002D358D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FAB98CC88A337339F0D807D /* Pods-TheBigTipper.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
