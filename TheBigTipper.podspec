@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.module_name = 'TheBigTipper'
   s.name = 'TheBigTipper'
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.license = 'MIT'
   s.summary = 'Fake data generator in Swift'
   s.homepage = 'https://www.atlassian.com'
