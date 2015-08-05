@@ -3,9 +3,9 @@ Pod::Spec.new do |s|
   s.name = 'TheBigTipper'
   s.version = '0.0.1'
   s.license = 'MIT'
-  s.summary = 'REST Module for Atlassian Mobile team'
+  s.summary = 'Fake data generator in Swift'
   s.homepage = 'https://www.atlassian.com'
-  s.authors = { 'Huy Le' => 'hule@atlassian.com' }
+  s.authors = { 'Sushant Choudhary' => 'schoudhary@atlassian.com' }
   s.source = {  :git => 'https://github.com/kumarSC/TheBigTipper.git', :tag => s.version}
   s.source_files = 'TheBigTipper/**/*.{swift}'
   s.resource_bundle = { "BigTipper" => ["TheBigTipper/**/*.lproj"] }
