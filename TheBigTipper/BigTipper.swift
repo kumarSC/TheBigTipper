@@ -13,15 +13,15 @@ public class BigTipper {
 
     public struct name {
 
-        static var defaultName: String {
+        public static var defaultName: String {
             return (BigTipper.name.firstname()+" "+BigTipper.name.lastname())
         }
 
-        static func firstname() -> String {
+        public static func firstname() -> String {
             return BigTipper.helper.getRandom(firstnameSet)
         }
 
-        static func lastname() -> String {
+        public static func lastname() -> String {
             return BigTipper.helper.getRandom(lastnameSet)
             
         }
@@ -30,17 +30,17 @@ public class BigTipper {
 
     public struct finance {
 
-        static var defaultAmount: String {
+        public static var defaultAmount: String {
             return BigTipper.finance.amount(1000, max: 100000)
         }
 
-        var defaultTransactionType: String {
+        public var defaultTransactionType: String {
             return BigTipper.finance.transactionType()
         }
-        var defaultAccountName: String {
+        public var defaultAccountName: String {
             return BigTipper.finance.accountName()
         }
-        var defaultAccount: String {
+        public var defaultAccount: String {
             return BigTipper.finance.account()
         }
 
@@ -56,11 +56,11 @@ public class BigTipper {
 
     public struct company {
 
-        static var defaultCompanyName: String {
+        public static var defaultCompanyName: String {
             return BigTipper.company.companyName()
         }
 
-        static var defaultPhoneNumber: String {
+        public static var defaultPhoneNumber: String {
             return BigTipper.company.phoneNumber()
         }
     }
@@ -74,7 +74,7 @@ public class BigTipper {
 
     public struct network {
 
-        static var defaulthexdump: String {
+        public static var defaulthexdump: String {
             return BigTipper.network.hexdump()
 
         }
@@ -96,11 +96,11 @@ public class BigTipper {
 
     public struct internet {
 
-        static var defaultEmail: String {
+        public static var defaultEmail: String {
             return BigTipper.internet.email()
         }
 
-        static var defaultusername: String {
+        public static var defaultusername: String {
             return BigTipper.internet.username()
 
         }

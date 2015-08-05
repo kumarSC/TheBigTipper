@@ -14,9 +14,9 @@ public extension BigTipper {
 
     static var localeModule:NSBundle = NSBundle(forClass: BigTipper.self)
 
-    struct helper {
+    public struct helper {
 
-        static func createTransaction() ->  [String: AnyObject] {
+        public static func createTransaction() ->  [String: AnyObject] {
 
             return [
 
@@ -30,7 +30,7 @@ public extension BigTipper {
         }
 
 
-        static func createCard() -> [String: AnyObject] {
+        public static func createCard() -> [String: AnyObject] {
 
             return [
 
@@ -64,7 +64,7 @@ public extension BigTipper {
         }
 
 
-        static func setLanguage(lang:String?=nil) -> (){
+        public static func setLanguage(lang:String?=nil) -> (){
             //         let localePath = NSBundle(forClass: BigTipper.self).pathForResource(lang, ofType: "lproj")
 
             if lang != nil {

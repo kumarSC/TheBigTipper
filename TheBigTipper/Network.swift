@@ -7,7 +7,7 @@ extension BigTipper.network {
 
 
 
-    static func hexdump() -> String {
+    public static func hexdump() -> String {
 
         var hexSet:String = ""
 

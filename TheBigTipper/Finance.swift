@@ -10,14 +10,14 @@ import Foundation
 
 extension BigTipper.finance {
 
-    static func amount(min:Int, max:Int) -> String {
+    public static func amount(min:Int, max:Int) -> String {
 
         let randomAmount = min + Int(arc4random()) % (max - min)
         return currencyFormatter.stringFromNumber(randomAmount)!
 
     }
 
-    static func transactionType() -> String {
+    public static func transactionType() -> String {
 
 //        let url = NSBundle(forClass: BigTipper.self).URLForResource("de", withExtension: "lproj")
         let tranType = BigTipper.helper.getRandom(transactiontypeSet)
@@ -26,12 +26,12 @@ extension BigTipper.finance {
 
     }
 
-    static func accountName() -> String {
+    public static func accountName() -> String {
         return BigTipper.helper.getRandom(firstnameSet)
     }
 
 
-     static func account(length:Int?=nil) -> String {
+     public static func account(length:Int?=nil) -> String {
         let defaultLength = length != nil ? length : 8
         var template:String = ""
 
