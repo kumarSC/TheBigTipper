@@ -43,13 +43,13 @@ class TheBigTipperTests: XCTestCase {
 //        print(BigTipper.network.defaulthexdump)
 //
 //
-        print(BigTipper.helper.setLanguage("de"))
+        print(BigTipper.helper.setLanguage())
         print(BigTipper.finance.transactionType())
 //        print(BigTipper.helper.createTransaction())
 //
-//        print(BigTipper.internet.username())
-//        print(BigTipper.internet.password(5))
-//        print(BigTipper.internet.url(true))
+        print(BigTipper.internet.username())
+        print(BigTipper.internet.password(5))
+        print(BigTipper.internet.url(true))
 //
 //
 //

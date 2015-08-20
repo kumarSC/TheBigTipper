@@ -21,8 +21,8 @@ extension BigTipper.finance {
 
 //        let url = NSBundle(forClass: BigTipper.self).URLForResource("de", withExtension: "lproj")
         let tranType = BigTipper.helper.getRandom(transactiontypeSet)
-//        return localizedString(tranType)
-        return NSLocalizedString(tranType, bundle: BigTipper.localeModule, tableName: "Localizable", comment: "Transaction Type")
+        return localizedString(tranType)
+//        return NSLocalizedString(tranType, bundle: BigTipper.localeModule, tableName: "Localizable", comment: "Transaction Type")
 
     }
 
